@@ -1,0 +1,31 @@
+.contact {
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 7px;
+  width: 250px;
+}
+
+.contactCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactItem {
+  display: flex;
+  gap: 10px;
+}
+
+.contactItem:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contactBtnDelete {
+  padding: 5px;
+  min-width: 80px;
+}
