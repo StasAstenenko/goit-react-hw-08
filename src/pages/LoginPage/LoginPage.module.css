@@ -1,0 +1,37 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 300px;
+  height: 100%;
+}
+
+.contactFormTitle {
+  margin-bottom: 2px;
+}
+
+.contactFormTitle:not(:first-child) {
+  margin-top: 10px;
+}
+
+.contactFormInput {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+
+.contactFormError {
+  color: #c40f0f;
+  font-size: small;
+}
+
+.contactBtnAdd {
+  margin-top: 20px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  margin-left: 20px;
+}
+
+.par {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.logOut {
+  margin-top: 20px;
+  width: 100px;
+  padding: 5px;
+}
