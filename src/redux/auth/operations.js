@@ -22,7 +22,7 @@ export const isLogin = createAsyncThunk(
       console.log(data);
       return data;
     } catch (error) {
-      thunkApi.rejectWithValue(error.message);
+      return thunkApi.rejectWithValue(error.message);
     }
   }
 );
@@ -35,7 +35,7 @@ export const isRegister = createAsyncThunk(
       setAuthHeaders(data.token);
       return data;
     } catch (error) {
-      thunkApi.rejectWithValue(error.message);
+      return thunkApi.rejectWithValue(error.message);
     }
   }
 );
@@ -50,7 +50,7 @@ export const isRefresh = createAsyncThunk(
       const { data } = await instance.get("/users/current");
       return data;
     } catch (error) {
-      thunkApi.rejectWithValue(error.message);
+      return thunkApi.rejectWithValue(error.message);
     }
   },
   {
@@ -70,6 +70,6 @@ export const logOut = createAsyncThunk("auth/logout", async (_, thunkApi) => {
     clearAuthHeader();
     return;
   } catch (error) {
-    thunkApi.rejectWithValue(error.message);
+    return thunkApi.rejectWithValue(error.message);
   }
 });
